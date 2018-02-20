@@ -1,0 +1,106 @@
+html {
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, #000000, #434343);
+}
+h1 {
+  font-weight: 400;
+  font-size: 3.5rem;
+  text-align: center;
+  font-family: 'Black Ops One', cursive;
+  color: #ffffff;
+}
+section {
+  margin: 1.5em auto;
+  width: 400px;
+}
+button {
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 200px;
+  height: 200px;
+  border: 0;
+  border-radius: 50%;
+  padding: .7em 1em;
+  margin: 4em auto 3em;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(180deg, #D5230E 0%, #D5230E 80%, #D5230E 100%);
+  box-shadow: 2px 5px 30px rgba(0, 0, 0, .4);
+
+  will-change: transform, filter;
+  transition: all 0.3s ease-out;
+}
+button .fa {
+  font-size: 130px;
+  line-height: 200px;
+  margin: 0;
+  text-shadow: 1px 1px 2px #ffffff;
+}
+button:hover {
+  transform: scale(.92);
+}
+button:active {
+  filter: brightness(.8);
+}
+button:focus {
+  outline: 0;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 1.3em;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: 10px;
+}
+.fa-github::before {
+  content: "\f09b";
+}
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+  vertical-align: center;
+}
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+.output-you {
+  font-family: 'Patua One', cursive;
+  letter-spacing: 0.1em;
+}
+.output-bot {
+  font-family: 'Nanum Myeongjo', serif;
+  letter-spacing: 0.1em;
+}
