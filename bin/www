@@ -92,7 +92,7 @@ function onListening() {
 /* socket connection & message transmission */
 
 const io = require('../node_modules/socket.io').listen(server);
-require('../node_modules/dotenv').config();
+// require('../node_modules/dotenv').config();
 
 const APIAI_TOKEN = process.env.APIAI_TOKEN;
 const APIAI_SESSION_ID = process.env.APIAI_SESSION_ID;
