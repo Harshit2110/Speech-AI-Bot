@@ -10,6 +10,9 @@ var users = require('./routes/users');
 
 var app = express();
 
+// setting node_env to production
+app.set('env','production');
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
